@@ -1,7 +1,6 @@
 package com.company;
 
 import java.util.ArrayList;
-import java.util.UUID;
 
 public class Building extends Unit {
     private ArrayList<Sensor> sensors = new ArrayList<Sensor>();
@@ -11,16 +10,21 @@ public class Building extends Unit {
         super(name, ID);
     }
 
-    public ArrayList<Sensor> getSensors() {
-        return sensors;
+    public int getSensors() {
+        return sensors.size();
     }
 
     public ArrayList<Actuator> getActuators() {
         return actuators;
     }
 
+    public void addSensor(Sensor sensor){
+        sensors.add(sensor);
+    }
+
     @Override
     public String toString() {
         return getName();
     }
+
 }

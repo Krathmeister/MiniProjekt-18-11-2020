@@ -3,29 +3,20 @@ package com.company;
 import java.util.ArrayList;
 import java.util.UUID;
 
-public class BuildingManagementSystem
-{
+public class BuildingManagementSystem {
     private ArrayList<Building> Buildings = new ArrayList<Building>();
 
-    public BuildingManagementSystem()
-    {
-    }
-
-
-    protected void AddBuilding(Building b)
-    {
+    protected void AddBuilding(Building b) {
         Buildings.add(b);
-        System.out.println(b + " Was added.");
+        System.out.println(b.getName() + " was added with amount of sensors: " + b.getSensors());
     }
 
-    protected void RemoveBuilding(Building b, UUID id)
-    {
-        if( b.getID().equals(id) )
-        Buildings.remove(b);
+    protected void RemoveBuilding(Building b, String id) {
+        if (b.getID().equals(id))
+            Buildings.remove(b);
     }
 
-    protected void DeleteBuildings()
-    {
+    protected void DeleteBuildings() {
         Buildings.clear();
     }
 
