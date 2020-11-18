@@ -6,8 +6,8 @@ public class Actuator extends Unit {
 
     private double value;
 
-    public Actuator(String name, UUID ID, double value){
-        super(name,ID);
+    public Actuator(String name, UUID ID, double value) {
+        super(name, ID);
         this.setValue(value);
     }
 
