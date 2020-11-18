@@ -9,6 +9,7 @@ public class BuildingManagementSystem {
     protected void AddBuilding(Building b) {
         Buildings.add(b);
         System.out.println(b.getName() + " was added with amount of sensors: " + b.getSensors());
+        System.out.println("and actuators: " + b.getActuators() + "\n");
     }
 
     protected void RemoveBuilding(Building b, String id) {

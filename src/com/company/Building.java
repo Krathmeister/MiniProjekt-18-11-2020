@@ -14,12 +14,15 @@ public class Building extends Unit {
         return sensors.size();
     }
 
-    public ArrayList<Actuator> getActuators() {
-        return actuators;
+    public int getActuators() {
+        return actuators.size();
     }
 
     public void addSensor(Sensor sensor){
         sensors.add(sensor);
+    }
+    public void addActuator(Actuator actuator){
+        actuators.add(actuator);
     }
 
     @Override
