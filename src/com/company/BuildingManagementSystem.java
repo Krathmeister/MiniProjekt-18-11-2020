@@ -7,10 +7,10 @@ public class BuildingManagementSystem
 {
     private ArrayList<Building> Buildings = new ArrayList<Building>();
 
-    public BuildingManagementSystem (ArrayList Buildings)
+    public BuildingManagementSystem()
     {
-        this.Buildings = Buildings;
     }
+
 
     protected void AddBuilding(Building b)
     {
