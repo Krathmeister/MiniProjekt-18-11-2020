@@ -15,6 +15,7 @@ public class BuildingManagementSystem
     protected void AddBuilding(Building b)
     {
         Buildings.add(b);
+        System.out.println(b + " Was added.");
     }
 
     protected void RemoveBuilding(Building b, UUID id)
@@ -27,4 +28,6 @@ public class BuildingManagementSystem
     {
         Buildings.clear();
     }
+
+
 }

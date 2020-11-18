@@ -7,7 +7,7 @@ public class Unit
     private String name;
     private String ID;
 
-    public Unit(String name, UUID id)
+    public Unit(String name, String id)
     {
         this.name = name;
         this.ID = UUID.randomUUID().toString();;

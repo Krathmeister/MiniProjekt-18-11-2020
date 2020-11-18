@@ -7,7 +7,7 @@ public class Building extends Unit {
     private ArrayList<Sensor> sensors = new ArrayList<Sensor>();
     private ArrayList<Actuator> actuators = new ArrayList<>();
 
-    public Building(String name, UUID ID) {
+    public Building(String name, String ID) {
         super(name, ID);
     }
 
@@ -17,5 +17,10 @@ public class Building extends Unit {
 
     public ArrayList<Actuator> getActuators() {
         return actuators;
+    }
+
+    @Override
+    public String toString() {
+        return getName();
     }
 }
