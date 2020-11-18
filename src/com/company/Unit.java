@@ -5,12 +5,12 @@ import java.util.UUID;
 public class Unit
 {
     private String name;
-    private UUID ID;
+    private String ID;
 
     public Unit(String name, UUID id)
     {
         this.name = name;
-        this.ID = id;
+        this.ID = UUID.randomUUID().toString();;
     }
 
     protected String getName()
@@ -18,7 +18,7 @@ public class Unit
         return name;
     }
 
-    protected UUID getID()
+    protected String getID()
     {
         return ID;
     }

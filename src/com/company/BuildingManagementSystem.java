@@ -19,7 +19,7 @@ public class BuildingManagementSystem
 
     protected void RemoveBuilding(Building b, UUID id)
     {
-        if( b.getID() == id )
+        if( b.getID().equals(id) )
         Buildings.remove(b);
     }
 
